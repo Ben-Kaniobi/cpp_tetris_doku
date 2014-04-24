@@ -50,3 +50,6 @@ nbproject/private/
 
 #except this file
 !.gitignore
+
+#except the final pdf
+report.pdf
