@@ -1,89 +1,52 @@
-## Core latex/pdflatex auxiliary files:
-*.aux
-*.lof
-*.log
-*.lot
-*.fls
+# generic files to ignore
+# backup files (*~) and vim swap file (.swp), MacOS dir file (.DS_Store)
+*~
+*.lock
+*.DS_Store
+*.swp
 *.out
-*.toc
 
-## Intermediate documents:
-*.dvi
-# these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
+#IDE files to ignore (Netbeans, Eclipse)
+nbproject/private/
+.classpath
+.project
+.settings
 
-## Bibliography auxiliary files (bibtex/biblatex/biber):
+#ignore generated .class files
+*.class
+
+# TeX/LaTeX intermediates #
+*.*~
+*.aux
+*.log
+*.tmp
+*.xref
+*.pdx
+*.pnd
 *.bbl
 *.bcf
+*.auto
 *.blg
-*-blx.aux
-*-blx.bib
-*.run.xml
-
-## Build tool auxiliary files:
-*.fdb_latexmk
-*.synctex.gz
-*.synctex.gz(busy)
-*.pdfsync
-
-## Auxiliary and intermediate files from other packages:
-
-# algorithms
-*.alg
-*.loa
-
-# amsthm
-*.thm
-
-# beamer
-*.nav
-*.snm
-*.vrb
-
-# glossaries
-*.acn
-*.acr
-*.glg
+*.dvi
 *.glo
-*.gls
-
-# hyperref
-*.brf
-
-# listings
-*.lol
-
-# makeidx
+*.out
 *.idx
 *.ilg
 *.ind
-*.ist
+*.idv
+*.4ct
+*.4tc
+*.lg
+*.xmpi
+*.tcp
+*.toc
+*.tps
+*blx.bib
+*.run.xml
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
 
-# minitoc
-*.maf
-*.mtc
-*.mtc0
-
-# minted
-*.pyg
-
-# nomencl
-*.nlo
-
-# sagetex
-*.sagetex.sage
-*.sagetex.py
-*.sagetex.scmd
-
-# sympy
-*.sout
-*.sympy
-sympy-plots-for-*.tex/
-
-# todonotes
-*.tdo
-
-# xindy
-*.xdy
+#except this file
+!.gitignore
