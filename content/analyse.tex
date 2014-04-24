@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Titel:   Beispiele
+% Autor:   Simon Plattner
+% Datum:   24.04.2014
+% Version: 1.0.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%:::Change-Log:::
+% Versionierung erfolgt auf folgende Gegebenheiten: -1. Release Versionen
+%                                                   -2. Neue Kapitel
+%                                                   -3. Fehlerkorrekturen
+%
+% 1.0.0       Erstellung der Datei
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+\chapter{Analyse}\label{ch:analyse}
+	%
+	Zuerst soll eine Analyse des Projektes durchgeführt werden. Dazu werden verschiedene UML Diagramme erzeugt. Als erstes kommt das Use-Case-Diagramm zum Einsatz. Abbildung \ref{abb:use_case} zeigt einige solche Anwendungsfälle auf.
+	%
+	\image{content/UML/UseCase}{width=0.8\textwidth}[Anwendungsfall-Diagramm][abb:use_case]
+	%
+	\section{Use-Cases}
+		%
+		Im Nachfolgenden sollen einige Anwendungsfälle betrachtet werden. Anwendungsfall \textit{Spielstein drehen} (in Abschnitt \ref{ss:use_case_spielstein_drehen}) ist als einziger voll umfänglich beschrieben. \par
+		%
+		\subsection{Spiel starten}
+			%
+			Tabelle \ref{tab:use_case_spiel_starten} zeigt den Anwendungsfall, bei dem ein neues Spiel gestartet wird. Dieser Fall kommt genau einmal beim Start der Applikation vor. Das Spiel kann nicht neu gestartet, ohne das Programm neu zu starten. Ein erneutes Auftreten des Anwendungsfalls ist damit weg bedingt.
+			%
+			\begin{table}[htbp]
+				\centering
+				\begin{tabular}{ p{1.5cm} p{2cm} p{8cm} } 
+					\hline
+					Fall Nr. & 1 & Spiel starten \\
+					\hline
+					\multicolumn{2}{ l }{Beschreibung:} & Der Spieler startet ein neues Spiel. Das Spielfeld wird geleert, der GameHandler wird gestartet. \\  
+					\hline
+					\multicolumn{2}{ l }{Vorbedingung:} & Das System ist eingeschaltet. Es läuft noch kein Spiel. \\
+					\hline
+				\end{tabular}
+				\caption{Anwendungsfall \textit{Spiel starten}}
+				\label{tab:use_case_spiel_starten}  
+			\end{table}
+			%
+		\subsection{Spielfeld aktualisieren}
+			%
+			Tabelle \ref{tab:use_case_spielfeld_aktualisieren} zeigt den Anwendungsfall, bei dem das Spielfeld durch den GameHandler aktualisiert wird. Dieser Fall tritt periodisch auf. Für den Aufruf entsprechender Methoden sorgt ein Softwaretimer.
+			%
+			\begin{table}[htbp]
+				\centering
+				\begin{tabular}{ p{1.5cm} p{2cm} p{8cm} } 
+					\hline
+					Fall Nr. & 2 & Spielfeld aktualisieren \\
+					\hline
+					\multicolumn{2}{ l }{Beschreibung:} & Der GameHandler reagiert auf Benutzereingaben und aktualisiert das Spielfeld. Wenn eine Reihe komplett wurde, wird diese entfernt. Wenn das Spielfeld voll ist, wird das Spiel abgebrochen. \\  
+					\hline
+					\multicolumn{2}{ l }{Vorbedingung:} & Das Spiel läuft. Der Player macht eine Bewegung oder eine Drehung des Spielsteins oder der GameHandler aktualisiert das Spiel. \\
+					\hline
+				\end{tabular}
+				\caption{Anwendungsfall \textit{Spielfeld aktualisieren}}
+				\label{tab:use_case_spielfeld_aktualisieren}  
+			\end{table}
+			%
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		\subsection{Spielstein drehen}\label{ss:use_case_spielstein_drehen}
+			%
+			Tabelle \ref{tab:use_case_spielstein_drehen} zeigt den Anwendungsfall, bei dem ein Spielstein (ein sogenanntes \textit{Tetromino}\footnote{Die Bezeichnung \textit{Tetromino} steht im englischen für eine Geometrische Figur, die aus vier Quadraten aufgebaut ist (und einigen weiteren Anforderungen genügt). Die klassischen Spielsteine aus \textit{TETRIS} sind Tetrominos.}) gedreht wird. Das passiert unabhängig von den Zeitpunkten, zu denen der GameHandler das Spielfeld aktualisieren lässt.\todo{in tabelle \ref{tab:use_case_spielstein_drehen} referenz auf sequenzdiagram einbetten}
+			%
+			\begin{table}[htbp]
+				\centering
+				\begin{tabular}{ p{1.5cm} p{2cm} p{8cm} } 
+					\hline
+					Fall Nr. & 3 & Spielstein drehen \\
+					\hline
+					\multicolumn{2}{ l }{Beschreibung:} & Der GameHandler reagiert auf Benutzereingaben und aktualisiert das Spielfeld. Wenn eine Reihe komplett wurde, wird diese entfernt. Wenn das Spielfeld voll ist, wird das Spiel abgebrochen. \\  
+					\hline
+					\multicolumn{2}{ l }{Vorbedingung:} & Das Spiel läuft. \\
+					\hline
+					%
+					%
+					\multicolumn{2}{ l }{Ablauf:} & \\
+					\multicolumn{2}{ c }{E1)} & asdf \\
+					\multicolumn{2}{ c }{A1)} & bsdf \\
+					\multicolumn{2}{ c }{E2)} & asdf \\
+					\multicolumn{2}{ c }{A2)} & bsdf \\
+					%
+					%
+					\hline
+					\multicolumn{2}{ l }{Auswirkungen:} & Das Tetromino hat eine neue Ausrichtung. \\
+					\hline
+					\multicolumn{2}{ l }{Weitere Informationen:} & Drehen ist nur möglich, falls dabei eine zulässige Bewegung statt finden (beispielsweise darf das Tetromino nicht in ein anderes Tetromino \enquote{hineingedreht} werden). \\
+					\hline
+					\multicolumn{2}{ l }{Diagramme:} & TODOTODOTODOTODO \\
+					\hline
+				\end{tabular}
+				\caption{Anwendungsfall \textit{Spielstein drehen}}
+				\label{tab:use_case_spielstein_drehen}  
+			\end{table}
+			%
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%	
+%	\begin{table}[htbp]
+%		\centering
+%		\begin{tabular}{|l|l|l|} 
+%			\hline
+%			\rowcolor{bfhblue}
+%			\textcolor{white}{Spalte 1} & \textcolor{white}{Spalte 2} & \textcolor{white}{Spalte 3}\\
+%			\hline
+%			Ich & bin & da \\
+%			\hline
+%			\multicolumn{2}{|l|}{Zwei Spalten vereinen} & Das geht!\\
+%			\hline
+%		\end{tabular}
+%		\caption{Messmittelliste der Messung Messleitung}
+%		\label{tab:tabelle}  
+%	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

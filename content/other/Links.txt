@@ -1,0 +1,8 @@
+Polynomio:
+http://de.wikipedia.org/wiki/Tetromino#Darstellung_.C3.BCber_Zusammenhangsgraphen
+Tetromino:
+http://en.wikipedia.org/wiki/Tetromino
+SRS-Rotation:
+http://tetris.wikia.com/wiki/SRS
+TGM-Rotation:
+http://tetris.wikia.com/wiki/ARS
