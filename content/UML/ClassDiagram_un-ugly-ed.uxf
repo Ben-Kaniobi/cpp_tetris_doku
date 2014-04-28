@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="12.2">
-  <zoom_level>8</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>648</x>
-      <y>432</y>
-      <w>96</w>
-      <h>80</h>
+      <x>738</x>
+      <y>387</y>
+      <w>108</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>/Square/
 --
@@ -17,10 +17,10 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>200</x>
-      <y>432</y>
-      <w>96</w>
-      <h>88</h>
+      <x>234</x>
+      <y>387</y>
+      <w>108</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>/Tetromino/
 --
@@ -34,21 +34,21 @@ Rotate(dir)</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>272</x>
-      <y>488</y>
-      <w>248</w>
-      <h>112</h>
+      <x>315</x>
+      <y>450</y>
+      <w>278</w>
+      <h>125</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>24;24;208;24;208;96;232;96</additional_attributes>
+    <additional_attributes>27;27;234;27;234;108;261;108</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>216</x>
-      <y>736</y>
-      <w>64</w>
-      <h>80</h>
+      <x>252</x>
+      <y>729</y>
+      <w>72</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>I
 --
@@ -59,10 +59,10 @@ _-Color_
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>304</x>
-      <y>736</y>
-      <w>64</w>
-      <h>80</h>
+      <x>351</x>
+      <y>729</y>
+      <w>72</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>O
 --
@@ -73,10 +73,10 @@ _-Color_
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>392</x>
-      <y>736</y>
-      <w>64</w>
-      <h>80</h>
+      <x>450</x>
+      <y>729</y>
+      <w>72</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>T
 --
@@ -87,10 +87,10 @@ _-Color_
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>464</x>
-      <y>736</y>
-      <w>64</w>
-      <h>80</h>
+      <x>531</x>
+      <y>729</y>
+      <w>72</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>J
 --
@@ -101,10 +101,10 @@ _-Color_
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>536</x>
-      <y>736</y>
-      <w>64</w>
-      <h>80</h>
+      <x>612</x>
+      <y>729</y>
+      <w>72</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>L
 --
@@ -115,10 +115,10 @@ _-Color_
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>608</x>
-      <y>736</y>
-      <w>64</w>
-      <h>80</h>
+      <x>693</x>
+      <y>729</y>
+      <w>72</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>S
 --
@@ -129,10 +129,10 @@ _-Color_
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>680</x>
-      <y>736</y>
-      <w>64</w>
-      <h>80</h>
+      <x>774</x>
+      <y>729</y>
+      <w>72</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>Z
 --
@@ -143,65 +143,65 @@ _-Color_
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>224</x>
-      <y>496</y>
-      <w>40</w>
-      <h>112</h>
+      <x>261</x>
+      <y>459</y>
+      <w>44</w>
+      <h>125</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>24;24;24;96</additional_attributes>
+    <additional_attributes>27;27;27;108</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>616</x>
-      <y>688</y>
-      <w>40</w>
-      <h>64</h>
+      <x>702</x>
+      <y>675</y>
+      <w>44</w>
+      <h>71</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>24;24;24;48</additional_attributes>
+    <additional_attributes>27;27;27;54</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>400</x>
-      <y>568</y>
-      <w>40</w>
-      <h>64</h>
+      <x>459</x>
+      <y>540</y>
+      <w>44</w>
+      <h>71</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>24;24;24;24;24;48</additional_attributes>
+    <additional_attributes>27;27;27;27;27;54</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>224</x>
-      <y>568</y>
-      <w>216</w>
-      <h>64</h>
+      <x>261</x>
+      <y>540</y>
+      <w>242</w>
+      <h>71</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>24;48;24;24;200;24</additional_attributes>
+    <additional_attributes>27;54;27;27;225;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>400</x>
-      <y>688</y>
-      <w>40</w>
-      <h>64</h>
+      <x>459</x>
+      <y>675</y>
+      <w>44</w>
+      <h>71</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>24;24;24;48</additional_attributes>
+    <additional_attributes>27;27;27;54</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>504</x>
-      <y>432</y>
-      <w>96</w>
-      <h>80</h>
+      <x>576</x>
+      <y>387</y>
+      <w>108</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>Line
 --
@@ -215,21 +215,21 @@ IsFull()</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>576</x>
-      <y>448</y>
-      <w>88</w>
-      <h>40</h>
+      <x>657</x>
+      <y>405</y>
+      <w>98</w>
+      <h>44</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>24;24;72;24</additional_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;81;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>336</x>
-      <y>288</y>
-      <w>96</w>
-      <h>96</h>
+      <x>387</x>
+      <y>207</y>
+      <w>108</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>bg=cyan
 Updater
@@ -237,6 +237,7 @@ Updater
 _-TheUpdater_
 _-TickTime_
 --
+_getInstance()_
 _Start()_
 _Stop()_
 _UpdateGame()_</panel_attributes>
@@ -245,27 +246,28 @@ _UpdateGame()_</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>240</x>
-      <y>360</y>
-      <w>160</w>
-      <h>88</h>
+      <x>279</x>
+      <y>306</y>
+      <w>179</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>24;72;24;56;144;56;144;24</additional_attributes>
+    <additional_attributes>27;81;27;63;162;63;162;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>504</x>
-      <y>304</y>
-      <w>128</w>
-      <h>80</h>
+      <x>576</x>
+      <y>216</y>
+      <w>144</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>bg=cyan
 Map
 --
 _-TheMap_
 --
+_getInstance()_
 _IsTetrominoFree(Tet.)_
 _RemoveLine(yPos)_
 _MergeToMap(Tet.)_</panel_attributes>
@@ -274,32 +276,32 @@ _MergeToMap(Tet.)_</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>528</x>
-      <y>360</y>
-      <w>40</w>
-      <h>88</h>
+      <x>603</x>
+      <y>306</y>
+      <w>44</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>24;24;24;72</additional_attributes>
+    <additional_attributes>27;27;27;81</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>272</x>
-      <y>336</y>
-      <w>248</w>
-      <h>160</h>
+      <x>315</x>
+      <y>279</y>
+      <w>278</w>
+      <h>179</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>232;24;208;24;208;144;24;144</additional_attributes>
+    <additional_attributes>261;27;234;27;234;162;27;162</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>392</x>
-      <y>616</y>
-      <w>64</w>
-      <h>80</h>
+      <x>450</x>
+      <y>594</y>
+      <w>72</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>/Tetromino9/
 --
@@ -311,10 +313,10 @@ Rotate(dir)</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>216</x>
-      <y>616</y>
-      <w>64</w>
-      <h>80</h>
+      <x>252</x>
+      <y>594</y>
+      <w>72</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>/Tetromino16/
 --
@@ -326,21 +328,21 @@ Rotate(dir)</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>224</x>
-      <y>672</y>
-      <w>40</w>
-      <h>80</h>
+      <x>261</x>
+      <y>657</y>
+      <w>44</w>
+      <h>89</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>24;24;24;64</additional_attributes>
+    <additional_attributes>27;27;27;72</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>304</x>
-      <y>616</y>
-      <w>64</w>
-      <h>80</h>
+      <x>351</x>
+      <y>594</y>
+      <w>72</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>/Tetromino4/
 --
@@ -352,76 +354,76 @@ Rotate(dir)</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>312</x>
-      <y>672</y>
-      <w>40</w>
-      <h>80</h>
+      <x>360</x>
+      <y>657</y>
+      <w>44</w>
+      <h>89</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>24;24;24;64</additional_attributes>
+    <additional_attributes>27;27;27;72</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>312</x>
-      <y>568</y>
-      <w>40</w>
-      <h>64</h>
+      <x>360</x>
+      <y>540</y>
+      <w>44</w>
+      <h>71</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>24;24;24;48</additional_attributes>
+    <additional_attributes>27;27;27;54</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>400</x>
-      <y>672</y>
-      <w>40</w>
-      <h>56</h>
+      <x>459</x>
+      <y>657</y>
+      <w>44</w>
+      <h>62</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>24;24;24;40</additional_attributes>
+    <additional_attributes>27;27;27;45</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>400</x>
-      <y>688</y>
-      <w>328</w>
-      <h>40</h>
+      <x>459</x>
+      <y>675</y>
+      <w>368</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>312;24;24;24</additional_attributes>
+    <additional_attributes>351;27;27;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>688</x>
-      <y>688</y>
-      <w>40</w>
-      <h>64</h>
+      <x>783</x>
+      <y>675</y>
+      <w>44</w>
+      <h>71</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>24;24;24;48</additional_attributes>
+    <additional_attributes>27;27;27;54</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>472</x>
-      <y>688</y>
-      <w>40</w>
-      <h>64</h>
+      <x>540</x>
+      <y>675</y>
+      <w>44</w>
+      <h>71</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>24;24;24;48</additional_attributes>
+    <additional_attributes>27;27;27;54</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>648</x>
-      <y>560</y>
-      <w>96</w>
-      <h>80</h>
+      <x>738</x>
+      <y>531</y>
+      <w>108</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>Space
 --
@@ -431,10 +433,10 @@ Rotate(dir)</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>504</x>
-      <y>560</y>
-      <w>96</w>
-      <h>80</h>
+      <x>576</x>
+      <y>531</y>
+      <w>108</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>Block
 --
@@ -446,54 +448,54 @@ Block(Color)</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>672</x>
-      <y>488</y>
-      <w>40</w>
-      <h>88</h>
+      <x>765</x>
+      <y>450</y>
+      <w>44</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>24;24;24;72</additional_attributes>
+    <additional_attributes>27;27;27;81</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>528</x>
-      <y>512</y>
-      <w>184</w>
-      <h>64</h>
+      <x>603</x>
+      <y>477</y>
+      <w>206</w>
+      <h>71</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>24;48;24;24;168;24</additional_attributes>
+    <additional_attributes>27;54;27;27;189;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>432</x>
-      <y>616</y>
-      <w>264</w>
-      <h>80</h>
+      <x>495</x>
+      <y>594</y>
+      <w>296</w>
+      <h>89</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>24;64;248;64;248;24</additional_attributes>
+    <additional_attributes>27;72;279;72;279;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>168</x>
-      <y>616</y>
-      <w>616</w>
-      <h>240</h>
+      <x>198</x>
+      <y>594</y>
+      <w>692</w>
+      <h>269</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>48;48;24;48;24;224;600;224;600;64;544;64;544;24</additional_attributes>
+    <additional_attributes>54;54;27;54;27;252;675;252;675;72;612;72;612;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Note</type>
     <coordinates>
-      <x>672</x>
-      <y>352</y>
-      <w>112</w>
-      <h>56</h>
+      <x>765</x>
+      <y>297</y>
+      <w>126</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>bg=yellow
 Nur die untersten
@@ -503,27 +505,28 @@ Nur die untersten
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>576</x>
-      <y>368</y>
-      <w>112</w>
-      <h>64</h>
+      <x>657</x>
+      <y>315</y>
+      <w>125</w>
+      <h>71</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>24;48;96;24</additional_attributes>
+    <additional_attributes>27;54;108;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>184</x>
-      <y>288</y>
-      <w>128</w>
-      <h>96</h>
+      <x>216</x>
+      <y>207</y>
+      <w>144</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>bg=cyan
 KeyboardHandler
 --
 _-TheKeyboardHandler_
 --
+_getInstance()_
 _Start()_
 _Stop()_
 _UpdateGame()_</panel_attributes>
@@ -532,21 +535,21 @@ _UpdateGame()_</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>208</x>
-      <y>360</y>
-      <w>40</w>
-      <h>88</h>
+      <x>243</x>
+      <y>288</y>
+      <w>44</w>
+      <h>116</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>24;72;24;40;24;24</additional_attributes>
+    <additional_attributes>27;99;27;63;27;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Note</type>
     <coordinates>
-      <x>584</x>
-      <y>136</y>
-      <w>112</w>
-      <h>56</h>
+      <x>666</x>
+      <y>54</y>
+      <w>126</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>bg=yellow
 MergeToMap
@@ -557,32 +560,32 @@ zu weit oben</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>272</x>
-      <y>312</y>
-      <w>248</w>
-      <h>152</h>
+      <x>315</x>
+      <y>252</y>
+      <w>278</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>232;24;184;24;184;136;24;136</additional_attributes>
+    <additional_attributes>261;27;207;27;207;153;27;153</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>560</x>
-      <y>168</y>
-      <w>48</w>
-      <h>152</h>
+      <x>639</x>
+      <y>90</y>
+      <w>53</w>
+      <h>143</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>24;136;32;24</additional_attributes>
+    <additional_attributes>27;126;36;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>208</x>
-      <y>136</y>
-      <w>120</w>
-      <h>80</h>
+      <x>243</x>
+      <y>54</y>
+      <w>135</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>bg=cyan
 GameHandler
@@ -590,16 +593,17 @@ GameHandler
 _-TheGameHandler_
 --
 _main()_
+_getInstance()_
 _GameOver()_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Note</type>
     <coordinates>
-      <x>656</x>
-      <y>240</y>
-      <w>128</w>
-      <h>80</h>
+      <x>747</x>
+      <y>171</y>
+      <w>144</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>bg=yellow
 RemoveLine():
@@ -611,66 +615,66 @@ RemoveLine():
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>608</x>
-      <y>280</y>
-      <w>64</w>
-      <h>56</h>
+      <x>693</x>
+      <y>216</y>
+      <w>71</w>
+      <h>62</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>24;40;48;24</additional_attributes>
+    <additional_attributes>27;45;54;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>208</x>
-      <y>192</y>
-      <w>40</w>
-      <h>112</h>
+      <x>243</x>
+      <y>117</y>
+      <w>44</w>
+      <h>107</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
-    <additional_attributes>24;96;24;24</additional_attributes>
+    <additional_attributes>27;90;27;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>304</x>
-      <y>168</y>
-      <w>96</w>
-      <h>136</h>
+      <x>351</x>
+      <y>90</y>
+      <w>107</w>
+      <h>134</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>80;120;80;24;24;24</additional_attributes>
+    <additional_attributes>90;117;90;27;27;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>304</x>
-      <y>144</y>
-      <w>264</w>
-      <h>176</h>
+      <x>351</x>
+      <y>63</y>
+      <w>296</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>248;160;248;24;24;24</additional_attributes>
+    <additional_attributes>279;153;279;27;27;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>544</x>
-      <y>688</y>
-      <w>40</w>
-      <h>64</h>
+      <x>621</x>
+      <y>675</y>
+      <w>44</w>
+      <h>71</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>24;24;24;48</additional_attributes>
+    <additional_attributes>27;27;27;54</additional_attributes>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>232</x>
-      <y>224</y>
-      <w>96</w>
-      <h>56</h>
+      <x>270</x>
+      <y>144</y>
+      <w>108</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -682,10 +686,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>384</x>
-      <y>208</y>
-      <w>96</w>
-      <h>56</h>
+      <x>441</x>
+      <y>135</y>
+      <w>108</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -696,10 +700,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>416</x>
-      <y>128</y>
-      <w>96</w>
-      <h>56</h>
+      <x>477</x>
+      <y>45</y>
+      <w>108</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -709,10 +713,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>176</x>
-      <y>376</y>
-      <w>96</w>
-      <h>56</h>
+      <x>207</x>
+      <y>324</y>
+      <w>108</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -722,10 +726,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>296</x>
-      <y>376</y>
-      <w>96</w>
-      <h>56</h>
+      <x>342</x>
+      <y>324</y>
+      <w>108</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -735,10 +739,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>560</x>
-      <y>384</y>
-      <w>40</w>
-      <h>56</h>
+      <x>639</x>
+      <y>333</y>
+      <w>45</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -750,10 +754,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>608</x>
-      <y>456</y>
-      <w>48</w>
-      <h>56</h>
+      <x>693</x>
+      <y>414</y>
+      <w>54</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -763,10 +767,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>312</x>
-      <y>512</y>
-      <w>32</w>
-      <h>24</h>
+      <x>360</x>
+      <y>477</y>
+      <w>36</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -776,10 +780,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>344</x>
-      <y>440</y>
-      <w>168</w>
-      <h>56</h>
+      <x>396</x>
+      <y>396</y>
+      <w>189</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -789,10 +793,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>384</x>
-      <y>408</y>
-      <w>96</w>
-      <h>56</h>
+      <x>441</x>
+      <y>360</y>
+      <w>108</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -802,10 +806,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>488</x>
-      <y>584</y>
-      <w>32</w>
-      <h>24</h>
+      <x>558</x>
+      <y>558</y>
+      <w>36</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -815,10 +819,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>200</x>
-      <y>672</y>
-      <w>32</w>
-      <h>24</h>
+      <x>234</x>
+      <y>657</y>
+      <w>36</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -828,10 +832,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>720</x>
-      <y>640</y>
-      <w>32</w>
-      <h>24</h>
+      <x>819</x>
+      <y>621</y>
+      <w>36</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -841,10 +845,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>664</x>
-      <y>640</y>
-      <w>32</w>
-      <h>24</h>
+      <x>756</x>
+      <y>621</y>
+      <w>36</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -854,10 +858,10 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>472</x>
-      <y>656</y>
-      <w>32</w>
-      <h>24</h>
+      <x>540</x>
+      <y>639</y>
+      <w>36</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
