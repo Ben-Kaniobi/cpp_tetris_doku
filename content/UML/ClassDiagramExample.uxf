@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>80</x>
+      <y>50</y>
+      <w>210</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Klasse
+oder
+/AbstrakteKlasse/
+oder
+AbstrakteKlasse
+{Abstrakt}
+--
+Attribut
+_Klassenattribut_
++PublicAttribut
+-PrivateAttribut
+#ProtectedAttribut
+/DerivedAttribut
+_StaticAttribut
+~PackageAttribut
+--
+Methode()
+_Klassenmethode()_</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

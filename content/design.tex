@@ -1,0 +1,80 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Titel:   Design
+% Autor:   Simon Plattner
+% Datum:   26.04.2014
+% Version: 1.0.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%:::Change-Log:::
+% Versionierung erfolgt auf folgende Gegebenheiten: -1. Release Versionen
+%                                                   -2. Neue Kapitel
+%                                                   -3. Fehlerkorrekturen
+%
+% 1.0.0       Erstellung der Datei
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+\chapter{Design}\label{ch:design}
+	%
+	Durch die Aufgabenstellung ist eine Implementierung in der objektorientierten Sprache C++ vorgeschrieben. Dieses Kapitel zeigt die Überlegungen zum Software-Design.
+	%
+	\section{Klassendiagramm}
+		%
+		Das Projekt ist gemäss den Klassen in Abbildung \ref{abb:class_diagram} aufgebaut. Die Darstellung der Klassen entspricht dabei der Konvention von Bild \ref{abb:class_diagram_convention}.
+		%
+		\image{content/UML/ClassDiagramExample}{width=0.4\textwidth}[Konvention zum Klassendiagramm][abb:class_diagram_convention]
+		%
+		Die cyanfarbenen Klassen sind Singletons, existieren also je genau einmal. Die weiss dargestellten Klassen werden zur Laufzeit erzeugt und zerstört. Von ihnen können zu einem gegebenen Zeitpunkt mehrere Instanzen existieren.\par
+		%
+		Die Tetrominos kommen in drei Grössen vor. Das kleinste mögliche Tetromino (mit der zugrunde liegenden Klasse \textit{Tetromino4}) besteht aus vier Blocks. Jeder dieser Blocks ist einerseits ein Square, andererseits besitzt er eine Farbe. Der Aufruf der Methode Rotate() hat für diese Tetromino-Art keinen Einfluss.\par
+		%
+		Die grösseren Tetrominos (mit den zugrunde liegenden Klassen \textit{Tetromino9} und \textit{Tetromino16}) verfügen zusätzlich zu den sichtbaren Quadraten (= Blocks) auch noch eine Menge an unsichtbaren Elementen. Abbildung \ref{abb:SRS_orientation} stellt diesen Sachverhalt dar. Die schwarzen Bereiche bestehen aus Spaces. Spaces sind Quadrate ohne Farbe. Es sind reine Platzhalter. Da jedes Tetromino genau vier Blocks (farbige Quadrate) enthält, ist auch die Anzahl Spaces (unsichtbare Quadrate) für jedes Tetromino über seine Lebenszeit konstant.
+		%
+		\image{content/image/SRS_orientation}{width=0.5\textwidth}[Ausrichtung der Elemente (Reihenfolge: \textbf{I, O, T, J, L, S, Z}) (\textit{Quelle: http://tetris.wikia.com/wiki/SRS, von uns modifiziert})][abb:SRS_orientation]
+		%
+		\image{content/UML/ClassDiagram}{width=1.0\textwidth}[Klassendiagramm][abb:class_diagram]
+		%
+	\section{Sequenzdiagramme}
+		%
+		\subsection{Tetromino drehen} \label{ss:rotate_tetromino}
+			Das Sequenzdiagramm in Abbildung \ref{abb:SequenceDiagramRotate} zeigt den Ablauf zum Rotieren eines Tetominos. Der zugehörige Aktor ist in jedem Fall der Spieler. Er gibt eine gewünschte Rotation über das Keyboard vor.\par
+			%
+			Zum Zwecke der Kollisionsverhinderung wird ein neues Tetromino erzeugt, welches die gewünschte Ausrichtung bereits besitzt. Anschliessend wird dieses Tetromino dem Map-Objekt übergeben (mit \textit{IsTetrominoFree(Tetromino)}), um überprüfen zu lassen, ob die gewünschte Ausrichtung ohne Kollision erreicht werden kann.\par
+			%
+			Das Map-Objekt zerlegt das Tetromino in seine Blöcke und prüft für jeden dieser Blöcke, ob er mit einem existierenden Block (im Line-Containter) kollidiert. Nach dieser Überprüfung wird die Information durch Rückgabewerte an den Aufrufer zurückgeliefert, sodass der Aufrufer weiss, ob die Bewegung zulässig ist oder nicht.\par
+			%
+			Falls die gewünschte Bewegung zulässig ist, wird das gültige Tetromino rotiert. Das neu erzeugte Tetromino wird in jedem Fall anschliessend gelöscht.\par
+			%
+			Falls die Rotation nicht zulässig ist, hat die Eingabe keinerlei weiterer Auswirkungen auf das Spiel.
+			%
+			\image{content/UML/SequenceDiagramRotate}{width=0.9\textwidth}[Sequenzdiagramm: Tetromino rotieren][abb:SequenceDiagramRotate]
+			%
+		\subsection{Tetromino füllt eine Linie}
+			\image{content/UML/SequenceDiagramClearLine}{width=1.0\textwidth}[Sequenzdiagramm: Linie löschen][abb:SequenceDiagramClearLine]
+			%
+			Abbildung \ref{abb:SequenceDiagramClearLine} zeigt einen etwas komplizierteren Fall. Es zeigt, wie mit einem Tetromino verfahren wird, das eine Linie vervollständigt.\par
+			%
+			Im Gegensatz zum vorhergehenden Beispiel ist nicht der Spieler sondern der Updater (ein Timer gesteuertes Objekt) der Auslöser der Sequenz. Auch in diesem Fall wird ein neues Tetromino erzeugt. Diesesmal wird es jedoch nicht rotiert sondern verschoben. Auch in diesem Fall wird das neue Tetromino anschliessend dem Map-Objekt übergeben, um mit Hilfe der Line-Container auf Kollisionen untersucht zu werden.\par
+			%
+			Falls keine Kollision statt findet, das Tetromino also bewegt werden darf, ist der Ablauf sehr ähnlich zu dem der Rotation (Abbildung \ref{abb:SequenceDiagramRotate}).\par
+			%
+			Falls jedoch eine Kollision statt findet, muss das Tetromino an seiner alten Position in die Map \enquote{gemerged}\footnote{von \textit{to merge}, englisch für \textit{zusammenfügen}, \textit{verschmelzen}} werden. Zu diesem Zweck wird für jedes betroffene Line-Objekt die Methode \textit{SetBlock(...)} ein- bis viermal aufgerufen (je nach Anzahl Blöcke, die in diese Linie gemerged werden sollen). Für jede Betroffene Line wird anschliessend mit der Methode \textit{IsFull()} überprüft, ob sich die Linie als vollständig betrachtet.\par
+			%
+			Im Fall, dass sich eine Linie als voll betrachtet, wird die betroffene Linie komplett gelöscht\footnote{Selbst Schuld. Wer voll ist ist nicht zu gebrauchen...}. Alle Linien, die sich oberhalb der zu entfernenden Linie befinden, werden jeweils um eine Linienhöhe nach unten verschoben, so dass die entstandene Lücke ausgefüllt wird. Nach diesem Verschieben wird zuoberst in der Map (ausserhalb des Sichtbaren Bereiches) eine neue, leere Linie erzeugt.
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

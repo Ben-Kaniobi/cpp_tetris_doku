@@ -18,6 +18,10 @@
 	%
 	\image{content/UML/UseCase}{width=0.8\textwidth}[Anwendungsfall-Diagramm][abb:use_case]
 	%
+	\section{Pflichtenheft}
+		%
+		Es soll ein TETRIS-Spiel in C++ implementiert werden. Das Spielprinzip wird dabei dem klassischen TETRIS-Spiel nachempfunden. Der Funktionsumfang unserer Kopie wird aus Zeitgründen etwas eingeschränkt. Namentlich verzichten wir auf eine Menüführung und ein Punktesystem sowie auf die Vorschau auf den nächsten erzeugten Block.
+		%
 	\section{Use-Cases}
 		%
 		Im Nachfolgenden sollen einige Anwendungsfälle betrachtet werden. Anwendungsfall \textit{Spielstein drehen} (in Abschnitt \ref{ss:use_case_spielstein_drehen}) ist als einziger voll umfänglich beschrieben. \par
@@ -60,25 +64,9 @@
 				\label{tab:use_case_spielfeld_aktualisieren}  
 			\end{table}
 			%
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 		\subsection{Spielstein drehen}\label{ss:use_case_spielstein_drehen}
 			%
-			Tabelle \ref{tab:use_case_spielstein_drehen} zeigt den Anwendungsfall, bei dem ein Spielstein (ein sogenanntes \textit{Tetromino}\footnote{Die Bezeichnung \textit{Tetromino} steht im englischen für eine Geometrische Figur, die aus vier Quadraten aufgebaut ist (und einigen weiteren Anforderungen genügt). Die klassischen Spielsteine aus \textit{TETRIS} sind Tetrominos.}) gedreht wird. Das passiert unabhängig von den Zeitpunkten, zu denen der GameHandler das Spielfeld aktualisieren lässt.\todo{in tabelle \ref{tab:use_case_spielstein_drehen} referenz auf sequenzdiagram einbetten}
+			Tabelle \ref{tab:use_case_spielstein_drehen} zeigt den Anwendungsfall, bei dem ein Spielstein (ein sogenanntes \textit{Tetromino}\footnote{Die Bezeichnung \textit{Tetromino} steht im englischen für eine Geometrische Figur, die aus vier Quadraten aufgebaut ist (und einigen weiteren Anforderungen genügt). Die klassischen Spielsteine aus \textit{TETRIS} sind Tetrominos.}) gedreht wird. Das passiert unabhängig von den Zeitpunkten, zu denen der GameHandler das Spielfeld aktualisieren lässt. Siehe hierzu auch Abbildung \ref{abb:SequenceDiagramRotate} in Abschnitt \ref{ss:rotate_tetromino}.
 			%
 			\begin{table}[htbp]
 				\centering
@@ -93,10 +81,8 @@
 					%
 					%
 					\multicolumn{2}{ l }{Ablauf:} & \\
-					\multicolumn{2}{ c }{E1)} & asdf \\
-					\multicolumn{2}{ c }{A1)} & bsdf \\
-					\multicolumn{2}{ c }{E2)} & asdf \\
-					\multicolumn{2}{ c }{A2)} & bsdf \\
+					\multicolumn{2}{ c }{E1)} & Der Spieler drückt die Pfeiltaste nach links \\
+					\multicolumn{2}{ c }{A1)} & Das Spiel rotiert falls möglich das aktive Tetromino \\
 					%
 					%
 					\hline
@@ -104,45 +90,17 @@
 					\hline
 					\multicolumn{2}{ l }{Weitere Informationen:} & Drehen ist nur möglich, falls dabei eine zulässige Bewegung statt finden (beispielsweise darf das Tetromino nicht in ein anderes Tetromino \enquote{hineingedreht} werden). \\
 					\hline
-					\multicolumn{2}{ l }{Diagramme:} & TODOTODOTODOTODO \\
+					\multicolumn{2}{ l }{Diagramme:} & Abbildung \ref{abb:SequenceDiagramRotate} \\
 					\hline
 				\end{tabular}
 				\caption{Anwendungsfall \textit{Spielstein drehen}}
 				\label{tab:use_case_spielstein_drehen}  
 			\end{table}
 			%
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-%	
-%	\begin{table}[htbp]
-%		\centering
-%		\begin{tabular}{|l|l|l|} 
-%			\hline
-%			\rowcolor{bfhblue}
-%			\textcolor{white}{Spalte 1} & \textcolor{white}{Spalte 2} & \textcolor{white}{Spalte 3}\\
-%			\hline
-%			Ich & bin & da \\
-%			\hline
-%			\multicolumn{2}{|l|}{Zwei Spalten vereinen} & Das geht!\\
-%			\hline
-%		\end{tabular}
-%		\caption{Messmittelliste der Messung Messleitung}
-%		\label{tab:tabelle}  
-%	\end{table}
-	
-	
-	
-	
-	
+	\section{Hardware}
+		Die fertige Software soll am PC (unter Windows) ausgeführt werden können. Dazu soll auf eine bestehende Grafik-Bibliothek\footnote{Die verwendete Grafikbibliothek wurde bereits in vergangenen Projekten der Schule verwendet.}\todo{evtl. grafiklibrary beschreiben, autor nennen etc.} zurückgegriffen werden.\par
+		%
+		Die genannte Bibliothek stellt einige weitere Funktionalität zur Verfügung. So kann sie beispielsweise eingesetzt werden, um Tastatureingaben einzulesen.
 	
 	
 	
