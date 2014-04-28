@@ -50,7 +50,7 @@ Rotate(dir)</panel_attributes>
       <w>72</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>I
+    <panel_attributes>TetrominoI
 --
 _-Color_
 --</panel_attributes>
@@ -64,7 +64,7 @@ _-Color_
       <w>72</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>O
+    <panel_attributes>TetrominoO
 --
 _-Color_
 --</panel_attributes>
@@ -78,7 +78,7 @@ _-Color_
       <w>72</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>T
+    <panel_attributes>TetrominoT
 --
 _-Color_
 --</panel_attributes>
@@ -92,7 +92,7 @@ _-Color_
       <w>72</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>J
+    <panel_attributes>TetrominoJ
 --
 _-Color_
 --</panel_attributes>
@@ -106,7 +106,7 @@ _-Color_
       <w>72</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>L
+    <panel_attributes>TetrominoL
 --
 _-Color_
 --</panel_attributes>
@@ -120,7 +120,7 @@ _-Color_
       <w>72</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>S
+    <panel_attributes>TetrominoS
 --
 _-Color_
 --</panel_attributes>
@@ -134,7 +134,7 @@ _-Color_
       <w>72</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>Z
+    <panel_attributes>TetrominoZ
 --
 _-Color_
 --</panel_attributes>
