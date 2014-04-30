@@ -4,7 +4,7 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>684</x>
+      <x>711</x>
       <y>342</y>
       <w>108</w>
       <h>90</h>
@@ -12,7 +12,8 @@
     <panel_attributes>/Square/
 --
 --
-getType()</panel_attributes>
+/getType()/
+/getColor()/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -21,7 +22,7 @@ getType()</panel_attributes>
       <x>180</x>
       <y>342</y>
       <w>108</w>
-      <h>99</h>
+      <h>108</h>
     </coordinates>
     <panel_attributes>/Tetromino/
 --
@@ -153,12 +154,12 @@ getType()</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>207</x>
-      <y>414</y>
+      <y>423</y>
       <w>44</w>
-      <h>143</h>
+      <h>134</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>27;27;27;126</additional_attributes>
+    <additional_attributes>27;27;27;117</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
@@ -196,9 +197,9 @@ getType()</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>522</x>
+      <x>531</x>
       <y>342</y>
-      <w>108</w>
+      <w>126</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>Line
@@ -213,7 +214,7 @@ isFull()</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>603</x>
+      <x>630</x>
       <y>360</y>
       <w>98</w>
       <h>44</h>
@@ -224,9 +225,9 @@ isFull()</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>180</x>
+      <x>162</x>
       <y>171</y>
-      <w>108</w>
+      <w>153</w>
       <h>126</h>
     </coordinates>
     <panel_attributes>bg=cyan
@@ -238,19 +239,19 @@ _-tickTime_
 _getInstance()_
 start()
 stop()
-updateGame(Now)</panel_attributes>
+updateGame(*Tet., Now)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>207</x>
-      <y>261</y>
+      <y>270</y>
       <w>44</w>
-      <h>98</h>
+      <h>89</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>27;81;27;27</additional_attributes>
+    <additional_attributes>27;72;27;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
@@ -274,7 +275,7 @@ mergeToMap(Tet.)</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>549</x>
+      <x>567</x>
       <y>261</y>
       <w>44</w>
       <h>98</h>
@@ -288,10 +289,10 @@ mergeToMap(Tet.)</panel_attributes>
       <x>261</x>
       <y>243</y>
       <w>278</w>
-      <h>170</h>
+      <h>197</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>261;27;234;27;234;153;27;153</additional_attributes>
+    <additional_attributes>261;27;234;27;234;180;27;180</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
@@ -421,7 +422,7 @@ rotate(Cw)</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>684</x>
+      <x>711</x>
       <y>486</y>
       <w>108</w>
       <h>90</h>
@@ -429,7 +430,8 @@ rotate(Cw)</panel_attributes>
     <panel_attributes>Space
 --
 --
-getType()</panel_attributes>
+getType()
+getColor()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -444,14 +446,15 @@ getType()</panel_attributes>
 --
 -color
 --
+Block(Color)
 getType()
-Block(Color)</panel_attributes>
+getColor()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>711</x>
+      <x>738</x>
       <y>405</y>
       <w>44</w>
       <h>98</h>
@@ -464,22 +467,22 @@ Block(Color)</panel_attributes>
     <coordinates>
       <x>585</x>
       <y>432</y>
-      <w>170</w>
+      <w>197</w>
       <h>71</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>27;54;27;27;153;27</additional_attributes>
+    <additional_attributes>27;54;27;27;180;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>441</x>
       <y>549</y>
-      <w>296</w>
+      <w>323</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>27;63;279;63;279;27</additional_attributes>
+    <additional_attributes>27;63;306;63;306;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
@@ -490,67 +493,18 @@ Block(Color)</panel_attributes>
       <h>269</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>54;63;27;63;27;252;675;252;675;63;612;63;612;27</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Note</type>
-    <coordinates>
-      <x>711</x>
-      <y>252</y>
-      <w>126</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>bg=yellow
-Nur die untersten
-20 Lines sichtbar</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>594</x>
-      <y>270</y>
-      <w>134</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>27;63;117;27</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Note</type>
-    <coordinates>
-      <x>315</x>
-      <y>198</y>
-      <w>126</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>bg=yellow
-MergeToMap():
---&gt; Überprüft ob
-zu weit oben</panel_attributes>
-    <additional_attributes/>
+    <additional_attributes>54;63;27;63;27;252;675;252;675;63;639;63;639;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>261</x>
-      <y>216</y>
+      <y>198</y>
       <w>278</w>
-      <h>161</h>
+      <h>197</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>261;27;207;27;207;144;27;144</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>414</x>
-      <y>171</y>
-      <w>125</w>
-      <h>62</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>108;27;27;45</additional_attributes>
+    <additional_attributes>261;27;189;27;189;180;27;180</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
@@ -576,27 +530,31 @@ stop()</panel_attributes>
     <type>com.umlet.element.Note</type>
     <coordinates>
       <x>693</x>
-      <y>126</y>
+      <y>171</y>
       <w>144</w>
-      <h>90</h>
+      <h>117</h>
     </coordinates>
     <panel_attributes>bg=yellow
 RemoveLine():
 - Linie n löschen
 - n+1 bis 23 eins runter
-- Neue Linie 23</panel_attributes>
+- Neue Linie 23
+
+MergeToMap():
+--&gt; Überprüft ob
+zu weit oben</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>639</x>
-      <y>171</y>
+      <y>198</y>
       <w>71</w>
-      <h>62</h>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>27;45;54;27</additional_attributes>
+    <additional_attributes>27;27;54;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
@@ -675,7 +633,7 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>585</x>
+      <x>603</x>
       <y>288</y>
       <w>45</w>
       <h>63</h>
@@ -684,7 +642,7 @@ halign=left
 halign=left
 1
 
-0..23</panel_attributes>
+0..20</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -716,8 +674,8 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>342</x>
-      <y>351</y>
+      <x>315</x>
+      <y>378</y>
       <w>189</w>
       <h>63</h>
     </coordinates>
@@ -729,8 +687,8 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>387</x>
-      <y>315</y>
+      <x>360</x>
+      <y>333</y>
       <w>108</w>
       <h>63</h>
     </coordinates>
@@ -755,7 +713,7 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>765</x>
+      <x>783</x>
       <y>576</y>
       <w>36</w>
       <h>27</h>
@@ -768,7 +726,7 @@ halign=left
   <element>
     <id>Text</id>
     <coordinates>
-      <x>702</x>
+      <x>729</x>
       <y>576</y>
       <w>36</w>
       <h>27</h>
@@ -870,7 +828,7 @@ fontsize=8
   <element>
     <id>Text</id>
     <coordinates>
-      <x>729</x>
+      <x>756</x>
       <y>441</y>
       <w>18</w>
       <h>36</h>
