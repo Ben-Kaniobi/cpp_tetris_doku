@@ -236,9 +236,9 @@ _-theUpdater_
 _-tickTime_
 --
 _getInstance()_
-_start()_
-_stop()_
-_updateGame(Now)_</panel_attributes>
+start()
+stop()
+updateGame(Now)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -266,9 +266,9 @@ Map
 _-theMap_
 --
 _getInstance()_
-_isTetrominoFree(Tet.)_
-_removeLine(yPos)_
-_mergeToMap(Tet.)_</panel_attributes>
+isTetrominoFree(Tet.)
+removeLine(yPos)
+mergeToMap(Tet.)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -558,16 +558,18 @@ zu weit oben</panel_attributes>
       <x>360</x>
       <y>63</y>
       <w>135</w>
-      <h>90</h>
+      <h>117</h>
     </coordinates>
     <panel_attributes>bg=cyan
 GameHandler
 --
 _-theGameHandler_
+-running
 --
 _getInstance()_
-_gameOver()_
-_isRunning()_</panel_attributes>
+gameOver()
+isRunning()
+stop()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
