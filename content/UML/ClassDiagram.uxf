@@ -429,7 +429,7 @@ rotate(Cw)</panel_attributes>
     <panel_attributes>Space
 --
 --
-/getType()/</panel_attributes>
+getType()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
