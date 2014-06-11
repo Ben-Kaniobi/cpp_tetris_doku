@@ -208,7 +208,7 @@ getType()</panel_attributes>
 -yPos
 --
 isSquareFree(xPos)
-setBlock(B, xPos)
+setBlock(Col., xPos)
 isFull()</panel_attributes>
     <additional_attributes/>
   </element>

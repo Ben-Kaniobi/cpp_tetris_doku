@@ -14,14 +14,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \chapter{Fertigstellungsgrad}\label{ch:fertigstellungsgrad}
 	%
-	Das Projekt ist zum Zeitpunkt der Abgabe nicht vollständig implementiert. Das liegt daran, dass aufgrund parallel laufender anderer Projekte die Zeit für weitere Arbeiten an diesem Projekt fehlte. Folgende Arbeiten sind nicht oder nur teilweise fertig gestellt:\todo{update list}
+	Das Projekt ist zum Zeitpunkt der Abgabe nicht vollständig implementiert. Das liegt daran, dass aufgrund parallel laufender anderer Projekte die Zeit für weitere Arbeiten an diesem Projekt fehlte. Folgende Arbeiten sind nicht oder nur teilweise fertig gestellt:
 	%
 	\begin{itemize}
-		\item{\textbf{kanis list of things}: Eine Funktion zum vorübergehenden Unterbrechen eines laufende Spiels könnte umgesetzt werden}
+		\item{\textbf{"`Map"'-Klasse}: Diese Klasse ist zum jetzigen Zeitpunkt nur als "`Gerüst"' implementiert. Das bedeutet, die Klasse inklusive Attribute und Methoden ist vorhanden, die Methoden haben jedoch noch keine Funktion.}
 		%
-		\item{\textbf{kanis list of things}: Für das laufende Spiel könnten Punkte gesammelt werden. Diese Funktion wäre insbesondere in Kombination mit einer Bestenliste vorstellbar}
-		%
-		\item{\textbf{kanis list of things}: Mit grossem Aufwand könnte das Spiel für einen Mehrspielerbetrieb umgerüstet werden} 
 	\end{itemize}
 	%
 \chapter{Fortsetzung}\label{ch:fortsetzung}
@@ -40,12 +37,9 @@
 		%
 		Die nachfolgend genannten Bugs sind bekannt:
 		%
-		\todo{fix the list of bugs}
-		%
 		\begin{itemize}
-			\item{Propulsion is a lie}
+			\item{Das Tetromino kann sich aus der Map bewegen und bleibt nicht unten liegen. Dieser Bug ist auf die unvollständige Implementation der Klasse "`Map"' zurückzuführen. (Siehe \autoref{ch:fertigstellungsgrad})}
 			%
-			\item{This statement is true}
+			\item{Mit der Richtungstaste \framebox{$\uparrow$}} wird das Tetromino entfernt und ein neues am Startpunkt erstellt. Dieses Verhalten wurde absichtlich implementiert, damit die einzelnen Tetrominoklassen zum jetzigen Softwarestand getestet werden können.
 			%
-			\item{At the end, there will be a overwhelming number of playing tables... but no second earlier} 
 		\end{itemize}
