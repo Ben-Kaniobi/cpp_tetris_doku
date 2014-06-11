@@ -22,7 +22,7 @@
       <x>121</x>
       <y>352</y>
       <w>132</w>
-      <h>132</h>
+      <h>143</h>
     </coordinates>
     <panel_attributes>/Tetromino/
 --
@@ -30,6 +30,7 @@
 -rotation
 --
 /getType()/
+/draw()/
 move(Dir)
 rotate(Cw)</panel_attributes>
     <additional_attributes/>
@@ -49,7 +50,7 @@ rotate(Cw)</panel_attributes>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>143</x>
-      <y>770</y>
+      <y>792</y>
       <w>88</w>
       <h>110</h>
     </coordinates>
@@ -64,7 +65,7 @@ getType()</panel_attributes>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>264</x>
-      <y>770</y>
+      <y>792</y>
       <w>88</w>
       <h>110</h>
     </coordinates>
@@ -79,7 +80,7 @@ getType()</panel_attributes>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>385</x>
-      <y>770</y>
+      <y>792</y>
       <w>88</w>
       <h>110</h>
     </coordinates>
@@ -94,7 +95,7 @@ getType()</panel_attributes>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>484</x>
-      <y>770</y>
+      <y>792</y>
       <w>88</w>
       <h>110</h>
     </coordinates>
@@ -109,7 +110,7 @@ getType()</panel_attributes>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>583</x>
-      <y>770</y>
+      <y>792</y>
       <w>88</w>
       <h>110</h>
     </coordinates>
@@ -124,7 +125,7 @@ getType()</panel_attributes>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>682</x>
-      <y>770</y>
+      <y>792</y>
       <w>88</w>
       <h>110</h>
     </coordinates>
@@ -139,7 +140,7 @@ getType()</panel_attributes>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>781</x>
-      <y>770</y>
+      <y>792</y>
       <w>88</w>
       <h>110</h>
     </coordinates>
@@ -154,18 +155,18 @@ getType()</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>154</x>
-      <y>451</y>
+      <y>462</y>
       <w>54</w>
-      <h>164</h>
+      <h>153</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>33;33;33;143</additional_attributes>
+    <additional_attributes>33;33;33;132</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>693</x>
-      <y>715</y>
+      <y>737</y>
       <w>54</w>
       <h>76</h>
     </coordinates>
@@ -187,7 +188,7 @@ getType()</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>396</x>
-      <y>715</y>
+      <y>737</y>
       <w>54</w>
       <h>76</h>
     </coordinates>
@@ -300,7 +301,7 @@ mergeToMap(Tet.)</panel_attributes>
       <x>385</x>
       <y>594</y>
       <w>88</w>
-      <h>121</h>
+      <h>143</h>
     </coordinates>
     <panel_attributes>/Tetromino9/
 --
@@ -309,7 +310,8 @@ _-sideNum_
 _-pSquares_
 --
 /getType()/
-rotate(Cw)</panel_attributes>
+rotate(Cw)
+draw()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -318,7 +320,7 @@ rotate(Cw)</panel_attributes>
       <x>143</x>
       <y>594</y>
       <w>88</w>
-      <h>121</h>
+      <h>143</h>
     </coordinates>
     <panel_attributes>/Tetromino16/
 --
@@ -327,14 +329,15 @@ _-sideNum_
 _-pSquares_
 --
 /getType()/
-rotate(Cw)</panel_attributes>
+rotate(Cw)
+draw()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>154</x>
-      <y>682</y>
+      <y>704</y>
       <w>54</w>
       <h>109</h>
     </coordinates>
@@ -347,7 +350,7 @@ rotate(Cw)</panel_attributes>
       <x>264</x>
       <y>594</y>
       <w>88</w>
-      <h>121</h>
+      <h>143</h>
     </coordinates>
     <panel_attributes>/Tetromino4/
 --
@@ -356,14 +359,15 @@ _-sideNum_
 _-pSquares_
 --
 /getType()/
-rotate(Cw)</panel_attributes>
+rotate(Cw)
+draw()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>275</x>
-      <y>682</y>
+      <y>704</y>
       <w>54</w>
       <h>109</h>
     </coordinates>
@@ -385,7 +389,7 @@ rotate(Cw)</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>396</x>
-      <y>682</y>
+      <y>704</y>
       <w>54</w>
       <h>87</h>
     </coordinates>
@@ -396,7 +400,7 @@ rotate(Cw)</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>396</x>
-      <y>715</y>
+      <y>737</y>
       <w>450</w>
       <h>54</h>
     </coordinates>
@@ -407,7 +411,7 @@ rotate(Cw)</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>792</x>
-      <y>715</y>
+      <y>737</y>
       <w>54</w>
       <h>76</h>
     </coordinates>
@@ -418,7 +422,7 @@ rotate(Cw)</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>495</x>
-      <y>715</y>
+      <y>737</y>
       <w>54</w>
       <h>76</h>
     </coordinates>
@@ -588,7 +592,7 @@ zu weit oben</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>594</x>
-      <y>715</y>
+      <y>737</y>
       <w>54</w>
       <h>76</h>
     </coordinates>
@@ -849,7 +853,7 @@ fontsize=8
     <id>Text</id>
     <coordinates>
       <x>418</x>
-      <y>726</y>
+      <y>748</y>
       <w>22</w>
       <h>44</h>
     </coordinates>
@@ -863,7 +867,7 @@ fontsize=8
     <id>Text</id>
     <coordinates>
       <x>517</x>
-      <y>726</y>
+      <y>748</y>
       <w>22</w>
       <h>44</h>
     </coordinates>
@@ -877,7 +881,7 @@ fontsize=8
     <id>Text</id>
     <coordinates>
       <x>616</x>
-      <y>726</y>
+      <y>748</y>
       <w>22</w>
       <h>44</h>
     </coordinates>
@@ -891,7 +895,7 @@ fontsize=8
     <id>Text</id>
     <coordinates>
       <x>715</x>
-      <y>726</y>
+      <y>748</y>
       <w>22</w>
       <h>44</h>
     </coordinates>
