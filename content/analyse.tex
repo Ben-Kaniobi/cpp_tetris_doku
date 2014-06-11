@@ -81,7 +81,7 @@
 					%
 					%
 					\multicolumn{2}{ l }{Ablauf:} & \\
-					\multicolumn{2}{ c }{E1)} & Der Spieler drückt die Pfeiltaste nach links \\
+					\multicolumn{2}{ c }{E1)} & Der Spieler drückt die Taste \framebox{\texttt{F1}} oder \framebox{\texttt{F2}} \\
 					\multicolumn{2}{ c }{A1)} & Das Spiel rotiert falls möglich das aktive Tetromino \\
 					%
 					%
@@ -95,6 +95,40 @@
 				\end{tabular}
 				\caption{Anwendungsfall \textit{Spielstein drehen}}
 				\label{tab:use_case_spielstein_drehen}  
+			\end{table}
+			%
+		\clearpage
+		\subsection{Spielstein bewegen}\label{ss:use_case_spielstein_bewegen}
+			%
+			Tabelle \ref{tab:use_case_spielstein_bewegen} zeigt den Anwendungsfall, bei dem ein \textit{Tetromino} bewegt wird. Auch das passiert unabhängig von den Zeitpunkten, zu denen der GameHandler das Spielfeld aktualisieren lässt.
+			%
+			\begin{table}[htbp]
+				\centering
+				\begin{tabular}{ p{1.5cm} p{2cm} p{8cm} } 
+					\hline
+					Fall Nr. & 4 & Spielstein bewegen \\
+					\hline
+					\multicolumn{2}{ l }{Beschreibung:} & Ein Tetromino wird nach einer Benutzereingabe verschoben. Um unzulässige Positionen zu vermeiden, prüft das Spiel die Eingabe auf Zulässigkeit. \\  
+					\hline
+					\multicolumn{2}{ l }{Vorbedingung:} & Das Spiel läuft. \\
+					\hline
+					%
+					%
+					\multicolumn{2}{ l }{Ablauf:} & \\
+					\multicolumn{2}{ c }{E1)} & Der Spieler drückt eine der vier Richtungstasten \framebox{$\leftarrow$}, \framebox{$\rightarrow$}, \framebox{$\uparrow$}, oder \framebox{$\downarrow$} \\
+					\multicolumn{2}{ c }{A1)} & Das Spiel verschiebt falls möglich das aktive Tetromino \\
+					%
+					%
+					\hline
+					\multicolumn{2}{ l }{Auswirkungen:} & Das Tetromino hat eine neue Position. \\
+					\hline
+					\multicolumn{2}{ l }{Weitere Informationen:} & Bewegen ist nur möglich, falls an der Zielposition alle vier Blöcke frei sind. \\
+					\hline
+					\multicolumn{2}{ l }{Diagramme:} & Abbildung \ref{abb:SequenceDiagramRotate} \\
+					\hline
+				\end{tabular}
+				\caption{Anwendungsfall \textit{Spielstein drehen}}
+				\label{tab:use_case_spielstein_bewegen}
 			\end{table}
 			%
 	\section{Hardware}
