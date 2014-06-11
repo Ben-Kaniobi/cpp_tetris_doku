@@ -16,10 +16,13 @@
 % Indexerstellung: makeindex -s report.ist report.idx
 %   Umlaute müssen separat behandelt werden!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[version=last,fleqn,pointlessnumbers]{scrreprt}  %first: Ergebniss Kompatibel zu ersten Version; last: Ergebniss entspricht den aktuellen Paketen; fleqn: Formeln linksbündig; pointlessnumbers: Kapitelnummerierung ohne Punkt; twoside: Doppelseitiger Druck
+\documentclass[version=last,fleqn,numbers=noenddot]{scrreprt}  %first: Ergebniss Kompatibel zu ersten Version; last: Ergebniss entspricht den aktuellen Paketen; fleqn: Formeln linksbündig; pointlessnumbers: Kapitelnummerierung ohne Punkt; twoside: Doppelseitiger Druck
 
+%Dokumentspezifische commands
+\newcommand{\cpp}{C\texttt{++}}
 %Dokumentangaben
 \newcommand{\Titel}{C++ Tetris}
+\newcommand{\Titelf}{\cpp\ Tetris}
 \newcommand{\Uebertitel}{Bericht}
 \newcommand{\AutorA}{Nicola Käser}
 \newcommand{\AutorB}{Simon Plattner}
@@ -151,7 +154,7 @@
 }
 \ihead[]{\textcolor{bfhblue}{\headmark}} %Chapter Titel in Kopfzeile
 \chead[]{}
-\ohead[]{\textcolor{bfhblue}{\Titel}} %Titel in Kopfzeile
+\ohead[]{\textcolor{bfhblue}{\Titelf}} %Titel in Kopfzeile
 
 %Fusszeile
 \ifoot[\textcolor{bfhblue}{Berner Fachhochschule}]{\textcolor{bfhblue}{Berner Fachhochschule}} %plain und scrheadings mit Dokumenttitel versehen
