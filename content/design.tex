@@ -32,6 +32,36 @@
 		%
 		\image{content/UML/ClassDiagram}{width=1.0\textwidth}[Klassendiagramm][abb:class_diagram]
 		%
+	\section{Beschreibung der Tetromino-Klassen}
+		%
+		In diesem Abschnitt werden die verschiedenen Tetromino-Klassen beschrieben.
+		%
+		\subsection{Tetromino}
+			%
+			Dies ist die oberste der Tetromino-Klassen, sie enthält allgemeine Informationen über die Position (\texttt{position}) und Ausrichtung (\texttt{rotation}) des Tetrominos. Zum Aktualisieren dieser Informationen sind zwei Methoden vorhanden:
+			\begin{description}
+				\item[move(Point2D Dir)] ändert die Positionsinformation um soviel in x-/ y-Richtung wie mit \texttt{Dir} angegeben wird.
+				\item[rotate(bool Cw)] ändert die Rotationsinformation auf den nächsten Wert, je nach dem welche Richtung mit \texttt{Cw} angegeben wird.
+			\end{description}
+			%
+			Die Klasse besitzt zusätzlich zwei \textit{rein virtuelle} Methoden \texttt{getType()} und \texttt{draw()}, und ist somit eine \textit{abstrakte Klasse}\footnote{Es kann kein Objekt dieser Klasse selbst erstellt werden}.
+			%
+		\subsection{Tetromino16, Tetromino4 und Tetromino9}
+			%
+			Dies sind die direkten Unterklassen der \texttt{Tetromino}-Klasse, sie enthalten Informationen die abhängig von der Tetromino-Grösse sind. Da es genau drei unterschiedliche Tetromino-Grössen im Spiel gibt, sind diese Informationen in drei Klassen zusammengefasst. Die vorhandenen Informationen sind die Seitenlänge in Anzahl Quadraten (\texttt{sideNum}), die Startposition (\texttt{startPos}) sowie die zweidimensionale Liste der Quadraten (\texttt{pSquares}).
+			
+			Zwei Methoden behandeln diese Informationen:
+			\begin{description}
+				\item[rotate(Cw)] ist auch in diesen Klasse wider vorhanden. Diese Methode ruft die gleichnamige Methode der Überklasse auf und ordnet zusätzlich die Quadrate in der Liste neu an.
+				\item[draw()] zeichnet das Tetromino an der richtigen Stelle auf den Bildschirm. Die \texttt{virtuelle Methode} aus der Überklasse wird also hier implementiert.
+			\end{description}
+			%
+			Auch diese Klassen besitzen zusätzlich je eine \textit{rein virtuelle} Methode \texttt{getType()}, und sind somit auch \textit{abstrakte Klassen}.
+			%
+		\subsection{TetrominoI, TetrominoO, TetrominoT, TetrominoJ, TetrominoL, TetrominoS, TetrominoZ}
+			%
+			Dies sind die untersten Tetromino-Klassen, sie enthalten Informationen über Form (indirekt) und Farbe (\texttt{color}) des Tetrominos. Die \textit{virtuelle Methode} \texttt{getType()} der Oberklassen wird erst hier implementiert und liefert die Information über den Typ (Form) des Tetrominos.
+			%
 	\section{Sequenzdiagramme}
 		%
 		\subsection{Tetromino drehen} \label{ss:rotate_tetromino}
