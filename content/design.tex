@@ -22,7 +22,7 @@
 		%
 		\image{content/UML/ClassDiagramExample}{width=0.4\textwidth}[Konvention zum Klassendiagramm][abb:class_diagram_convention]
 		%
-		Die cyanfarbenen Klassen sind Singletons, existieren also je genau einmal. Die weiss dargestellten Klassen werden zur Laufzeit erzeugt und zerstört. Von ihnen können zu einem gegebenen Zeitpunkt mehrere Instanzen existieren.\par
+		Die cyanfarbenen Klassen sind Singletons, existieren also je genau einmal. Die weiss dargestellten Klassen werden zur Laufzeit erzeugt und zerstört. Von ihnen können zu einem gegebenen Zeitpunkt mehrere Instanzen existieren\footnote{Ausnahme abstrakte Klassen; diese sind auch weiss dargestellt, können jedoch nicht instanziiert werden.}.\par
 		%
 		Die Tetrominos kommen in drei Grössen vor. Das kleinste mögliche Tetromino (mit der zugrunde liegenden Klasse \textit{Tetromino4}) besteht aus vier Blocks. Jeder dieser Blocks ist einerseits ein Square, andererseits besitzt er eine Farbe. Der Aufruf der Methode Rotate() hat für diese Tetromino-Art keinen Einfluss.\par
 		%
@@ -56,9 +56,9 @@
 			%
 			Falls keine Kollision statt findet, das Tetromino also bewegt werden darf, ist der Ablauf sehr ähnlich zu dem der Rotation (Abbildung \ref{abb:SequenceDiagramRotate}).\par
 			%
-			Falls jedoch eine Kollision statt findet, muss das Tetromino an seiner alten Position in die Map \enquote{gemerged}\footnote{von \textit{to merge}, englisch für \textit{zusammenfügen}, \textit{verschmelzen}} werden. Zu diesem Zweck wird für jedes betroffene Line-Objekt die Methode \textit{SetBlock(...)} ein- bis viermal aufgerufen (je nach Anzahl Blöcke, die in diese Linie gemerged werden sollen). Für jede Betroffene Line wird anschliessend mit der Methode \textit{IsFull()} überprüft, ob sich die Linie als vollständig betrachtet.\par
+			Falls jedoch eine Kollision statt findet, muss das Tetromino an seiner alten Position in die Map \textit{gemerged}\footnote{von \textit{to merge}, englisch für \textit{zusammenfügen}, \textit{verschmelzen}} werden. Zu diesem Zweck wird für jedes betroffene Line-Objekt die Methode \textit{SetBlock(...)} ein- bis viermal aufgerufen (je nach Anzahl Blöcke, die in diese Linie gemerged werden sollen). Für jede Betroffene Line wird anschliessend mit der Methode \textit{IsFull()} überprüft, ob sich die Linie als vollständig betrachtet.\par
 			%
-			Im Fall, dass sich eine Linie als voll betrachtet, wird die betroffene Linie komplett gelöscht\footnote{Selbst Schuld. Wer voll ist ist nicht zu gebrauchen...}. Alle Linien, die sich oberhalb der zu entfernenden Linie befinden, werden jeweils um eine Linienhöhe nach unten verschoben, so dass die entstandene Lücke ausgefüllt wird. Nach diesem Verschieben wird zuoberst in der Map (ausserhalb des Sichtbaren Bereiches) eine neue, leere Linie erzeugt.
+			Im Fall, dass sich eine Linie als voll betrachtet, wird die betroffene Linie komplett gelöscht. Alle Linien, die sich oberhalb der zu entfernenden Linie befinden, werden jeweils um eine Linienhöhe nach unten verschoben, so dass die entstandene Lücke ausgefüllt wird. Nach diesem Verschieben wird zuoberst in der Map (ausserhalb des Sichtbaren Bereiches) eine neue, leere Linie erzeugt.
 		
 		
 		
