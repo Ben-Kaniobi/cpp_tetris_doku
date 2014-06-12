@@ -44,7 +44,7 @@
 				\item[rotate(bool Cw)] ändert die Rotationsinformation auf den nächsten Wert, je nach dem welche Richtung mit \texttt{Cw} angegeben wird.
 			\end{description}
 			%
-			Die Klasse besitzt zusätzlich zwei \textit{rein virtuelle} Methoden \texttt{getType()} und \texttt{draw()}, und ist somit eine \textit{abstrakte Klasse}\footnote{Es kann kein Objekt dieser Klasse selbst erstellt werden}.
+			Die Klasse besitzt zusätzlich zwei \textit{rein virtuelle} Methoden \texttt{getType()} und \texttt{draw()}, und ist somit eine \textit{abstrakte} Klasse.
 			%
 		\subsection{Tetromino16, Tetromino4 und Tetromino9}
 			%
@@ -52,11 +52,11 @@
 			
 			Zwei Methoden behandeln diese Informationen:
 			\begin{description}
-				\item[rotate(Cw)] ist auch in diesen Klasse wider vorhanden. Diese Methode ruft die gleichnamige Methode der Überklasse auf und ordnet zusätzlich die Quadrate in der Liste neu an.
+				\item[rotate(Cw)] ist auch in diesen Klassen wieder vorhanden. Diese Methode ruft die gleichnamige Methode der Überklasse auf und ordnet zusätzlich die Quadrate in der Liste neu an.
 				\item[draw()] zeichnet das Tetromino an der richtigen Stelle auf den Bildschirm. Die \texttt{virtuelle Methode} aus der Überklasse wird also hier implementiert.
 			\end{description}
 			%
-			Auch diese Klassen besitzen zusätzlich je eine \textit{rein virtuelle} Methode \texttt{getType()}, und sind somit auch \textit{abstrakte Klassen}.
+			Auch diese Klassen besitzen zusätzlich je eine \textit{rein virtuelle} Methode \texttt{getType()}, und sind somit auch \textit{abstrakte} Klassen.
 			%
 		\subsection{TetrominoI, TetrominoO, TetrominoT, TetrominoJ, TetrominoL, TetrominoS, TetrominoZ}
 			%
